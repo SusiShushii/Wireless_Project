@@ -19,7 +19,7 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: '>=3.2.5 <4.0.0'
+  sdk: '>=3.3.0 <4.0.0'
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -30,11 +30,17 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.2
-  firebase_core: ^2.25.5
-  cloud_firestore: ^4.15.6
-  firebase_auth: ^4.4.0
-  google_maps_flutter: ^2.5.3
+
+  google_maps_flutter: ^2.6.1
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.6
+  firebase_core: ^2.29.0
+  firebase_auth: ^4.19.1
+  firebase_database: ^10.0.6
+  cloud_firestore: ^4.16.1
 
 dev_dependencies:
   flutter_test:
@@ -45,7 +51,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.0
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -60,20 +66,16 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - images/ppl_main.png
-    - images/background_main.png
-    - images/register_page.png
-    - images/arrow.png
-    - images/rectangle_home.png
-    - images/logo_home.png
-    - images/back_home.png
-    - images/qr.png
-    - images/slip.png
-    - images/rectangle_pay.png
-    - images/correct.png
-    - images/alc_back.png
-    - images/about.png
-    - images/food_back.png
+    - assets/images/main_back.png
+    - assets/images/whaton_1.png
+    - assets/images/whaton_2.png
+    - assets/images/about_1.png
+    - assets/images/food_menu.png
+    - assets/images/pay_qr.png
+    - assets/images/alc_menu.png
+    - assets/images/menu.png
+    - assets/images/menu_2.png
+    - assets/images/pay_success.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
